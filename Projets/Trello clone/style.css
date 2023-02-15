@@ -1,0 +1,127 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #424141;
+}
+nav {
+  background: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+}
+nav a {
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 10px;
+  color: #333;
+}
+.main-content {
+  display: flex;
+  padding: 60px 20px 0;
+}
+.items-container {
+  flex-shrink: 0;
+  padding: 10px;
+  width: 300px;
+  background: #f1f1f1;
+  border-radius: 3px;
+  margin: 10px;
+  cursor: move;
+  align-self: flex-start;
+}
+.top-container {
+  display: flex;
+  justify-content: space-between;
+}
+.top-container button, li button {
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: #e23c5d;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+.item {
+  padding: 15px 5px;
+  margin: 10px 0;
+  background: #f8f8f8;
+  box-shadow: 0 4px 1px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.add-item-btn, .add-container-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 20px;
+  font-size: 16px;
+}
+form {
+  display: none;
+  padding: 5px;
+  position: relative;
+}
+.top-form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-content form label {
+  display: block;
+  font-size: 18px;
+  margin: 10px 0;
+}
+.main-content form input {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+}
+.validation-msg {
+  display: block;
+  color: crimson;
+  font-size: 16px;
+  padding: 5px 0;
+}
+.close-form-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+}
+button[type="submit"] {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+/* Add New Container */
+.add-new-container {
+  flex-shrink: 0;
+  padding: 10px;
+  width: 300px;
+  background: #f1f1f1;
+  border-radius: 3px;
+  margin: 10px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+.add-container-btn {
+  margin-top: 5px;
+  width: 100%;
+}
