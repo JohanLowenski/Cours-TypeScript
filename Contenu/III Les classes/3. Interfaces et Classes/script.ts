@@ -17,3 +17,30 @@ console.log(FranceData);
 
 class Aquitaine extends France {}
 const AquitaineData = new Aquitaine("Aquitaine", 5.3, ["French"]);
+
+//Autre Exemple
+interface Country {
+  name: string;
+  population: number;
+  lang: string[];
+}
+
+const NorwayData: Country = {
+  name: "Norway",
+  population: 5.3,
+  lang: ["Norwegian"],
+};
+console.log(NorwayData);
+
+const FranceData: Country = {
+  name: "France",
+  population: 67,
+  lang: ["French"],
+};
+console.log(FranceData);
+
+const AquitaineData: Country = {
+  name: "Aquitaine",
+  population: 5.3,
+  lang: ["French"],
+};
