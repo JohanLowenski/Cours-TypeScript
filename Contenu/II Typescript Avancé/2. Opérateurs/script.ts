@@ -14,7 +14,7 @@ type Job = {
 const user1: Job = {
   title: "Développeur front-end",
   description: "Développeur web",
-  salary: 30000,
+  salary: 37000,
 };
 console.log(user1?.description);
 
@@ -46,7 +46,7 @@ console.log(display);
 
 //Never
 function alertUser(message: string): never {
-//   throw new Error(message);
+  //   throw new Error(message);
   throw message;
 }
-alertUser("Alerte ! Comportement dangereux !"); 
+alertUser("Alerte ! Comportement dangereux !");
